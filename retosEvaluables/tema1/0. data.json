@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Javier Rodríguez",
+    "email": "javier.mail@example.com",
+    "role": "admin",
+    "verified": true
+  },
+  {
+    "name": "Marta Sanchis",
+    "email": "marta.mail@example.com",
+    "role": "user",
+    "verified": false
+  },
+  {
+    "name": "Manuel Ortiz",
+    "email": "manuel.mail@example.com",
+    "role": "superUser",
+    "verified": true
+  },
+  {
+    "name": "Teresa Ramírez",
+    "email": "teresa.mail@example.com",
+    "role": "user",
+    "verified": true
+  },
+  {
+    "name": "Rodrigo Cuevas",
+    "email": "rodrigo.mail@example.com",
+    "role": "user",
+    "verified": false
+  }
+]
