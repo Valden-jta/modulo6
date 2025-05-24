@@ -1,0 +1,30 @@
+{
+  "name": "oparaciones-crud-mongoose",
+  "version": "1.0.0",
+  "description": "Ejercicion de práctica de operaciones CRUD en BD no relacionales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valden-jta/modulo6.git"
+  },
+  "keywords": [
+    "codenotch",
+    "retos",
+    "MongoDB",
+    "Base de datos no relacional"
+  ],
+  "author": "Javier de la Torre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valden-jta/modulo6/issues"
+  },
+  "homepage": "https://github.com/Valden-jta/modulo6#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.15.0"
+  }
+}
