@@ -1,0 +1,15 @@
+{
+  "name": "reto_tema3",
+  "version": "1.0.0",
+  "description": "resolucion del reto del tema 3 del modulo 6, manejo de datos en bases de datos no relacionales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier de la Torre",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "mongoose": "^8.15.1"
+  }
+}
