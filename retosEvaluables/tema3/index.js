@@ -45,7 +45,7 @@ mongoose
       {
         $group: {
           _id: "$subject_name",
-          "nota media": { $avg: "$mark" },
+          "avg": { $avg: "$mark" },
         },
       },
     ]);
@@ -74,11 +74,10 @@ mongoose
   .then(() => {
     return Mark.aggregate([
       {
-        $group: {
-          _id: {
-            Alumno: {
-              $concat: ["$student_first_name", " ", "$student_last_name"],
-            },
+        $project: {
+          _id: 0,
+          Alumno: {
+            $concat: ["$student_first_name", " ", "$student_last_name"],
           },
         },
       },
@@ -86,17 +85,79 @@ mongoose
   })
   .then((result) => {
     console.log("Consulta 3: ", result);
-    return mongoose.disconnect();   //! NO TE OLVIDES DE QUITAR ESTO CUANDO AVANCES
   })
-//   TODO: 4.
-//   TODO: 5.
-//   TODO: 6.
-//   TODO: 7.
-  // .then((result) => {
-  //   console.log("Consulta 7", result);
-  //   return mongoose.disconnect();
-  // })
+  //   4. Listar el nombre y los apellidos de todos los profesores (incluir repetidos)
+  .then(() => {
+    return Mark.aggregate([
+      { $unwind: "$teachers" },
+      {
+        $project: {
+          _id: 0,
+          Professor: {
+            $concat: [
+              "$teachers.teacher_first_name",
+              " ",
+              "$teachers.teacher_last_name",
+            ],
+          },
+        },
+      },
+    ]);
+  })
+  .then((result) => {
+    console.log("Consulta 4: ", result);
+  })
+  //   5. Mostrar el numero total de alumnos por grupo, ordenados por grupo en orden inverso al alfabeto
+  .then(() => {
+    return Mark.aggregate([
+      {
+        $group: {
+          _id: {
+            groupName: "$group_name",
+            student: {
+              $concat: ["$student_first_name", " ", "$student_last_name"],
+            },
+          },
+        },
+      },
+      {
+        $group: { _id: { Group: "$_id.groupName" }, totalStudents: { $sum: 1 } },
+      },
+      { $sort: { _id: -1 } },
+    ]);
+  })
+  .then((result) => {
+    console.log("Consulta 5: ", result);
+  })
+  //   6. Obten el top 5 de los nombres de asignaturas cuya nota media sea mayor que 5
+  .then(() => {
+    return Mark.aggregate([
+      { $group: { _id: "$subject_name", avg: { $avg: "$mark" } } },
+      { $sort: { avg: -1 } },
+      { $limit: 5 },
+    ]);
+  })
+  .then((result) => {
+    console.log("Consulta 6: ", result);
+  })
+  //   TODO: 7. Calcular el numero de profesores que hay por cada asignatura (incluir repetidos)
+  .then(() => {
+    return Mark.aggregate([
+      { $unwind: "$teachers" },
+      { $group: {
+          _id: {
+            subject: "$subject_name",
+            totalTeacher: {$concat: ["$teachers.teacher_first_name"," ","$teachers.teacher_last_name"]}}
+          },
+        },
+      { $group: { _id: { Subject: "$_id.subject" }, totalTeachers: { $sum: 1 } }  }
+    ]);
+  })
+  .then((result) => {
+    console.log("Consulta 7: ", result);
+    return mongoose.disconnect();
+  })
   .catch((err) => {
-    console.error("Error al insertar los datos:", err);
+    console.error("Error con la consulta:", err);
     mongoose.disconnect();
   });

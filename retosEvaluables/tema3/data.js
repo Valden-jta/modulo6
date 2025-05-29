@@ -27,7 +27,7 @@ let mark1 = new Mark({
   student_last_name: "García",
   group_name: "Presencial",
   subject_name: "Fundamentos de programación",
-  teachers: [teacher1, teacher2],
+  teachers: [teacher1],
 });
 
 let mark2 = new Mark({
@@ -37,7 +37,7 @@ let mark2 = new Mark({
   student_last_name: "García",
   group_name: "Presencial",
   subject_name: "Front end I -  Maquetacion y JavaScript",
-  teachers: [teacher3, teacher4],
+  teachers: [teacher3],
 });
 
 let mark3 = new Mark({
@@ -47,7 +47,7 @@ let mark3 = new Mark({
   student_last_name: "García",
   group_name: "Presencial",
   subject_name: "Front end II - Angular",
-  teachers: [teacher5, teacher6],
+  teachers: [teacher5, teacher6, teacher4],
 });
 
 let mark4 = new Mark({
@@ -57,7 +57,7 @@ let mark4 = new Mark({
   student_last_name: "García",
   group_name: "Presencial",
   subject_name: "Back end I - Node y Express",
-  teachers: [teacher7, teacher8],
+  teachers: [teacher7, teacher8, teacher2],
 });
 
 let mark5 = new Mark({
@@ -67,7 +67,7 @@ let mark5 = new Mark({
   student_last_name: "García",
   group_name: "Presencial",
   subject_name: "Back end II - Bases de datos relacionales",
-  teachers: [teacher9, teacher10],
+  teachers: [teacher9, teacher10, teacher11],
 });
 
 let mark6 = new Mark({
@@ -77,7 +77,7 @@ let mark6 = new Mark({
   student_last_name: "García",
   group_name: "Presencial",
   subject_name: "Back end III - Bases de datos no relacionales",
-  teachers: [teacher11, teacher12],
+  teachers: [teacher11, teacher12, teacher9],
 });
 
 let mark7 = new Mark({
@@ -87,7 +87,7 @@ let mark7 = new Mark({
   student_last_name: "García",
   group_name: "Presencial",
   subject_name: "Front end III - React",
-  teachers: [teacher13, teacher14],
+  teachers: [teacher13, teacher14, teacher4],
 });
 
 // ---- Luis Martínez ----
@@ -98,7 +98,7 @@ let mark8 = new Mark({
   student_last_name: "Martínez",
   group_name: "Presencial",
   subject_name: "Fundamentos de programación",
-  teachers: [teacher1, teacher2],
+  teachers: [teacher1],
 });
 
 let mark9 = new Mark({
@@ -108,7 +108,7 @@ let mark9 = new Mark({
   student_last_name: "Martínez",
   group_name: "Presencial",
   subject_name: "Front end I -  Maquetacion y JavaScript",
-  teachers: [teacher3, teacher4],
+  teachers: [teacher3],
 });
 
 let mark10 = new Mark({
@@ -118,7 +118,7 @@ let mark10 = new Mark({
   student_last_name: "Martínez",
   group_name: "Presencial",
   subject_name: "Front end II - Angular",
-  teachers: [teacher5, teacher6],
+  teachers: [teacher5, teacher6, teacher4],
 });
 
 let mark11 = new Mark({
@@ -128,7 +128,7 @@ let mark11 = new Mark({
   student_last_name: "Martínez",
   group_name: "Presencial",
   subject_name: "Back end I - Node y Express",
-  teachers: [teacher7, teacher8],
+  teachers: [teacher7, teacher8, teacher2],
 });
 
 let mark12 = new Mark({
@@ -138,7 +138,7 @@ let mark12 = new Mark({
   student_last_name: "Martínez",
   group_name: "Presencial",
   subject_name: "Back end II - Bases de datos relacionales",
-  teachers: [teacher9, teacher10],
+  teachers: [teacher9, teacher10, teacher11],
 });
 
 let mark13 = new Mark({
@@ -148,7 +148,7 @@ let mark13 = new Mark({
   student_last_name: "Martínez",
   group_name: "Presencial",
   subject_name: "Back end III - Bases de datos no relacionales",
-  teachers: [teacher11, teacher12],
+  teachers: [teacher11, teacher12, teacher9],
 });
 
 let mark14 = new Mark({
@@ -158,7 +158,7 @@ let mark14 = new Mark({
   student_last_name: "Martínez",
   group_name: "Presencial",
   subject_name: "Front end III - React",
-  teachers: [teacher13, teacher14],
+  teachers: [teacher13, teacher14, teacher4],
 });
 
 // ---- Sofía López ----
@@ -169,7 +169,7 @@ let mark15 = new Mark({
   student_last_name: "López",
   group_name: "Online",
   subject_name: "Fundamentos de programación",
-  teachers: [teacher1, teacher2],
+  teachers: [teacher1],
 });
 
 let mark16 = new Mark({
@@ -179,7 +179,7 @@ let mark16 = new Mark({
   student_last_name: "López",
   group_name: "Online",
   subject_name: "Front end I -  Maquetacion y JavaScript",
-  teachers: [teacher3, teacher4],
+  teachers: [teacher3],
 });
 
 let mark17 = new Mark({
@@ -189,7 +189,7 @@ let mark17 = new Mark({
   student_last_name: "López",
   group_name: "Online",
   subject_name: "Front end II - Angular",
-  teachers: [teacher5, teacher6],
+  teachers: [teacher5, teacher6, teacher4],
 });
 
 let mark18 = new Mark({
@@ -199,7 +199,7 @@ let mark18 = new Mark({
   student_last_name: "López",
   group_name: "Online",
   subject_name: "Back end I - Node y Express",
-  teachers: [teacher7, teacher8],
+  teachers: [teacher7, teacher8, teacher2],
 });
 
 let mark19 = new Mark({
@@ -209,7 +209,7 @@ let mark19 = new Mark({
   student_last_name: "López",
   group_name: "Online",
   subject_name: "Back end II - Bases de datos relacionales",
-  teachers: [teacher9, teacher10],
+  teachers: [teacher9, teacher10, teacher11],
 });
 
 let mark20 = new Mark({
@@ -219,7 +219,7 @@ let mark20 = new Mark({
   student_last_name: "López",
   group_name: "Online",
   subject_name: "Back end III - Bases de datos no relacionales",
-  teachers: [teacher11, teacher12],
+  teachers: [teacher11, teacher12, teacher9],
 });
 
 let mark21 = new Mark({
@@ -229,7 +229,7 @@ let mark21 = new Mark({
   student_last_name: "López",
   group_name: "Online",
   subject_name: "Front end III - React",
-  teachers: [teacher13, teacher14],
+  teachers: [teacher13, teacher14, teacher4],
 });
 
 // ---- Carlos Ruiz ----
@@ -240,7 +240,7 @@ let mark22 = new Mark({
   student_last_name: "Ruiz",
   group_name: "Online",
   subject_name: "Fundamentos de programación",
-  teachers: [teacher1, teacher2],
+  teachers: [teacher1],
 });
 
 let mark23 = new Mark({
@@ -250,7 +250,7 @@ let mark23 = new Mark({
   student_last_name: "Ruiz",
   group_name: "Online",
   subject_name: "Front end I -  Maquetacion y JavaScript",
-  teachers: [teacher3, teacher4],
+  teachers: [teacher3],
 });
 
 let mark24 = new Mark({
@@ -260,7 +260,7 @@ let mark24 = new Mark({
   student_last_name: "Ruiz",
   group_name: "Online",
   subject_name: "Front end II - Angular",
-  teachers: [teacher5, teacher6],
+  teachers: [teacher5, teacher6, teacher4],
 });
 
 let mark25 = new Mark({
@@ -270,7 +270,7 @@ let mark25 = new Mark({
   student_last_name: "Ruiz",
   group_name: "Online",
   subject_name: "Back end I - Node y Express",
-  teachers: [teacher7, teacher8],
+  teachers: [teacher7, teacher8, teacher2],
 });
 
 let mark26 = new Mark({
@@ -280,7 +280,7 @@ let mark26 = new Mark({
   student_last_name: "Ruiz",
   group_name: "Online",
   subject_name: "Back end II - Bases de datos relacionales",
-  teachers: [teacher9, teacher10],
+  teachers: [teacher9, teacher10, teacher11],
 });
 
 let mark27 = new Mark({
@@ -290,7 +290,7 @@ let mark27 = new Mark({
   student_last_name: "Ruiz",
   group_name: "Online",
   subject_name: "Back end III - Bases de datos no relacionales",
-  teachers: [teacher11, teacher12],
+  teachers: [teacher11, teacher12, teacher9],
 });
 
 let mark28 = new Mark({
@@ -300,7 +300,7 @@ let mark28 = new Mark({
   student_last_name: "Ruiz",
   group_name: "Online",
   subject_name: "Front end III - React",
-  teachers: [teacher13, teacher14],
+  teachers: [teacher13, teacher14, teacher4],
 });
 
 // ---- Elena Pérez ----
@@ -311,7 +311,7 @@ let mark29 = new Mark({
   student_last_name: "Pérez",
   group_name: "Online",
   subject_name: "Fundamentos de programación",
-  teachers: [teacher1, teacher2],
+  teachers: [teacher1],
 });
 
 let mark30 = new Mark({
@@ -321,7 +321,7 @@ let mark30 = new Mark({
   student_last_name: "Pérez",
   group_name: "Online",
   subject_name: "Front end I -  Maquetacion y JavaScript",
-  teachers: [teacher3, teacher4],
+  teachers: [teacher3],
 });
 
 let mark31 = new Mark({
@@ -331,7 +331,7 @@ let mark31 = new Mark({
   student_last_name: "Pérez",
   group_name: "Online",
   subject_name: "Front end II - Angular",
-  teachers: [teacher5, teacher6],
+  teachers: [teacher5, teacher6, teacher4],
 });
 
 let mark32 = new Mark({
@@ -341,7 +341,7 @@ let mark32 = new Mark({
   student_last_name: "Pérez",
   group_name: "Online",
   subject_name: "Back end I - Node y Express",
-  teachers: [teacher7, teacher8],
+  teachers: [teacher7, teacher8, teacher2],
 });
 
 let mark33 = new Mark({
@@ -351,7 +351,7 @@ let mark33 = new Mark({
   student_last_name: "Pérez",
   group_name: "Online",
   subject_name: "Back end II - Bases de datos relacionales",
-  teachers: [teacher9, teacher10],
+  teachers: [teacher9, teacher10, teacher11],
 });
 
 let mark34 = new Mark({
@@ -361,7 +361,7 @@ let mark34 = new Mark({
   student_last_name: "Pérez",
   group_name: "Online",
   subject_name: "Back end III - Bases de datos no relacionales",
-  teachers: [teacher11, teacher12],
+  teachers: [teacher11, teacher12, teacher9],
 });
 
 let mark35 = new Mark({
@@ -371,7 +371,7 @@ let mark35 = new Mark({
   student_last_name: "Pérez",
   group_name: "Online",
   subject_name: "Front end III - React",
-  teachers: [teacher13, teacher14],
+  teachers: [teacher13, teacher14, teacher4],
 });
 
 // Array de marks
