@@ -29,7 +29,6 @@ function getPhotos(req, res) {
 }
 function postPhotos(req, res) {
   // uso create() para aprovechar las validaciones del modelo
-
   photosModel
     .create({
       userName: req.body.userName,

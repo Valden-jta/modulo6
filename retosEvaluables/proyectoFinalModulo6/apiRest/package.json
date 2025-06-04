@@ -1,0 +1,32 @@
+{
+  "name": "poryecto_final_modulo6",
+  "version": "1.0.0",
+  "description": "creación de base de datos no relacional con Mongo Compass y conexión de la misma con un API externa",
+  "main": "apiRest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Valden-jta/modulo6.git"
+  },
+  "keywords": [
+    "Base de datos no relacional",
+    "API Rest",
+    "Compass",
+    "Atlas",
+    "Mongoose"
+  ],
+  "author": "Javier de la Torre Aragón",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valden-jta/modulo6/issues"
+  },
+  "homepage": "https://github.com/Valden-jta/modulo6#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
+  }
+}
